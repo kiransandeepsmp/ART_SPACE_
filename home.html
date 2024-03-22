@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 0.1">
+    <title>ArtSpace - ART SPACE </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        /* Your existing styles remain unchanged */
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #F9F3F5);
+            overflow-x: scroll; /* Prevent horizontal scroll */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 200vh;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #555;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            transition: background-color 5s;
+            z-index: 1000;
+        }
+        
+        nav a {
+            color: #e3ebe4;
+            text-decoration: style;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 5s;
+            padding: 50px;
+            height: 20px;
+            width: 20px;
+        }
+        
+        nav a:hover {
+            color: rgb(231, 127, 231), 243, 249;
+        }
+        
+        nav .fa{
+            margin-right: 8px;
+        }
+        .sub-menu-1{
+            display: none;
+        }
+        nav a:hover .sub-menu-1 {
+            display: block;
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 15px;
+        }
+        .hero-section {
+            position: cover;
+            overflow: scroll;
+            text-align: center;
+            color: #0A0B01;
+            padding: 150px 0;
+            background-image: url('https://img.freepik.com/free-vector/abstract-watercolor-background_23-2149038179.jpg?w=1800&t=st=1701069850~exp=1701070450~hmac=61ce7f74c0ba2ee94a5dd433e1beaacbc11268b92de71e3e97a451c2b3b6fff3'); /* Add your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: scroll;
+        }
+        
+        .hero-container {
+            animation: fadeInUp 5s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(50);
+            }
+        }
+        
+        .signup-button {
+            display: inline-block;
+            background-color: #fff;
+            color: #333;
+            padding: 10px 40px;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: background-color 5s;
+        }
+        
+        .signup-button:hover {
+            background-color: #0A0B01;
+        }
+        
+        main {
+            padding: 20px;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        .artwork {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        
+        .artwork img {
+            max-width: 100%;
+            height: 200px;
+            border: 1px solid #ddd;
+            border-radius: 30px;
+            box-shadow: 0 9px 18px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        
+        .artwork img:hover {
+            transform: scale(1);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="home.html"><i class="fa-solid fa-house"></i>Home</a>
+        <a href="help.html"><i class="fa-solid fa-clone"></i>Help</a>
+        <a href="about us.html"><i class="fa-solid fa-users"></i>About Us</a>
+        <a href="profile.html"><i class="fa-solid fa-yuio"></i>Profile</a>
+        <div class="sub-menu-1">
+            <ul>
+                <li><a href="#"></a>About your account</li>
+                <li><a href="#"></a>Privacy Policy</li>
+                <li><a href="#"></a>Terms of Use</li>
+                <li><a href="#"></a>Open Source Libraries</li>
+            </ul>
+        </div>
+        <a href="contact.html"><i class="fa-solid fa-phone"></i>Contact</a>
+        <a href="pages.html"><i class="fa-solid fa-edit"></i>Pages</a>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-container">
+                <h1>ART SPACE </h1>
+                <p>ArtSpace is a social media platform for artists and creators of all kinds. Share your artwork, connect with other artists, and find inspiration. BE ready to Unleash Your Art</p>
+                <a href="signup.html" class="signup-button" target="_blank">Sign Up</a>
+            </div>
+        </section>
+
+        <section>
+            <h2>Featured Artwork</h2>
+            <div class="artwork">
+                <!-- Replace these image sources with your artwork images -->
+                <img src="https://img.freepik.com/free-photo/abstract-nature-painted-with-watercolor-autumn-leaves-backdrop-generated-by-ai_188544-9806.jpg?w=2000&t=st=1701068138~exp=1701068738~hmac=af4857a0be942fda43c1093f957c495fc6d6c68e0e62c65cc977dc89b030a819" alt="Artwork 1">
+                <img src="https://img.freepik.com/free-photo/vibrant-abstract-hummingbird-flying-with-elegance-generated-by-ai_188544-19557.jpg?w=2000&t=st=1701068235~exp=1701068835~hmac=7273cac5fba010c2176efd7862bddd7b8c6642c98c85a54442ba1a18d92654b4" alt="Artwork 2">
+                <img src="" <!-- Add more artwork images as needed -->
+
+            </div>
+        </section>
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+                Art is anything that makes you feel good Be ready to unleash your Art.
+
+            </p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>
+                Feel free to reach out to me via email at <a href="mailto:artspacehelp@gmail.com">artspacehelp@gmail.com</a>.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Artspace- Artist</p>
+    </footer>
+
+    <script>
+        // JavaScript for changing the background color of the navigation bar on scroll
+        window.addEventListener ('scroll'), function ()
+            {const nav = document.querySelector('nav');
+            if (window.scroll);}
+            </script>
